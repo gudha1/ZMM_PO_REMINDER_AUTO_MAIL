@@ -1,0 +1,12 @@
+unmanaged implementation in class zbp_mm_po_reminder_cds unique;
+strict ( 1 );
+
+define behavior for ZMM_PO_REMINDER_CDS alias ReminderMail
+lock master
+authorization master ( instance )
+{
+  field ( readonly ) PurchaseOrder, PurchaseOrderItem;
+//  action( authorization : instance ) Mail ;
+  action Mail parameter ZMM_MAIL_PARAM;
+  action( authorization : instance ) lineMail ;
+}

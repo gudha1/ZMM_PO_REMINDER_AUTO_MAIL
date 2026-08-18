@@ -1,0 +1,4 @@
+@EndUserText.label: 'PO REMINDER SERVICE DEF'
+define service ZPO_REMINDER_DEF {
+  expose ZMM_PO_REMINDER_CDS;
+}

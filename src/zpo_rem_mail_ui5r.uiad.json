@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Po Reminder report"
+  },
+  "ui5AppDetails": {
+    "appId": "zporeminderautomail"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_58F90BE634489431F4D144B1879F49911E1988F1_TM",
+    "semanticObject": "zpo_reminder_auto_mail_rep4",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_58F90BE634489431F4D144B1879F49911E1988F1_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Po Reminder report",
+        "subtitle": "MM"
+      }
+    }
+  ]
+}

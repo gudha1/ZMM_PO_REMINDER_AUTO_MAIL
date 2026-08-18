@@ -1,0 +1,74 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo: {
+  typeName: 'Entry',
+  typeNamePlural: 'Lineitem',
+  title: { value: 'PurchaseOrder' }
+}
+
+annotate entity ZMM_PO_REMINDER_CDS with
+{
+  @UI.lineItem             : [{ position: 1 },
+  { type: #FOR_ACTION , dataAction: 'Mail' , label: 'Mail' ,  invocationGrouping: #CHANGE_SET  }]
+  @UI.selectionField       : [{position: 1 }]
+  @EndUserText.label       : 'Purchase Order'
+  PurchaseOrder;
+
+  @UI.lineItem             : [{ position: 2 }]
+  @EndUserText.label       : 'PurchaseOrder Item'
+  PurchaseOrderItem;
+
+  @UI.lineItem             : [{ position: 3 }]
+  @UI.selectionField       : [{position: 3 }]
+  @EndUserText.label       : 'Material'
+
+  Material;
+  @UI.lineItem             : [{ position: 4 }]
+  @UI.selectionField       : [{position: 4 }]
+  @EndUserText.label       : 'Supplier'
+
+  Supplier;
+  @UI.lineItem             : [{ position: 5 }]
+  @UI.selectionField       : [{position: 5 }]
+  @EndUserText.label       : 'Supplier Name'
+  SupplierName;
+  
+  @UI.lineItem             : [{ position: 6 }]
+  @EndUserText.label       : 'Email'
+  EmailAddress;
+
+  @UI.lineItem             : [{ position: 7 }]
+  @EndUserText.label       : 'Po Quantity'
+  OrderQuantity;
+
+  @UI.lineItem             : [{ position: 8 }]
+  @EndUserText.label       : 'Receipt Quantity'
+  ScheduleLineOrderQuantity;
+
+  @UI.lineItem             : [{ position: 9 }]
+  @EndUserText.label       : 'Pending Qty'
+  pendingqty;
+
+  @UI.lineItem             : [{ position: 10 }]
+  @UI.selectionField       : [{position: 6 }]
+  @EndUserText.label       : 'Delivery Date'
+  ScheduleLineDeliveryDate;
+  
+  @UI.lineItem             : [{ position: 11 }]
+  @UI.selectionField       : [{position: 6 }]
+  @EndUserText.label       : 'Material Group'
+  ProductGroup;
+
+  @UI.lineItem             : [{ position: 12 }]
+  @UI.selectionField       : [{position: 7 }]
+  @EndUserText.label       : 'Material Type'
+  ProductType;
+  
+  @UI.lineItem             : [{ position: 13 }]
+  @EndUserText.label       : 'User Name'
+  Username;
+
+
+
+
+}
